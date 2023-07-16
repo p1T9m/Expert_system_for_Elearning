@@ -1,0 +1,12 @@
+{% extends 'core/base.html'%}
+{% block content %}
+
+    <h2>Logout Successfull</h2>
+    <div class="text-grey-dark mt-6">
+        login again  
+        <a class="no-underline border-b border-blue text-blue" href="{% url 'login' %}">
+            Login
+        </a>.
+    </div>
+
+{% endblock %}
