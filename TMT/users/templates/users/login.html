@@ -1,6 +1,6 @@
 {% extends 'core/base.html'%}
 {% load tailwind_filters %}
-{% block title %}Loginin{% endblock %}
+{% block title %}Login{% endblock %}
 
 {% block content %}
 
@@ -13,14 +13,18 @@
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="py-4 px-8 text-lg bg-teal-500 hover:bg-gray-700 rounded-xl text-white" type="submit">Sign Up</button>
+                <button class="py-4 px-8 text-lg bg-teal-500 hover:bg-gray-700 rounded-xl text-white" type="submit">Login</button>
+                <small class="text-muted ml-2">
+                    <a href="{% url 'password_reset' %}" class="underline hover:bg-teal-500">Forgot Password?</a>
+                </small>
             </div>
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
-                Already Have An Account? <a class="ml-2" href="{% url 'register' %}">Signup</a>
+                Already Have An Account? <a class="ml-2 underline hover:bg-teal-500" href="{% url 'register' %}">Signup</a>
             </small>
         </div>
+
     </div>
 </div>
 {% endblock %}
