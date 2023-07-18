@@ -5,6 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_view
 from ExpertSystem import views 
+from second_expert import views as second
 
 
 urlpatterns = [
@@ -29,6 +30,10 @@ urlpatterns = [
     path('beginner-page/', views.beginner_page, name='beginner_page'),
     path('intermediate-page/', views.intermediate_page, name='intermediate_page'),
     path('advanced-page/', views.advanced_page, name='advanced_page'),
+    path('second-expert/', second.second_expert, name='second_expert'),
+    path('beginner/', second.beginner, name='beginner'),
+    path('inter/', second.inter, name='inter'),
+    path('advanced/', second.advanced, name='advanced'),
     path("admin/", admin.site.urls, name='admin'),
 ]
 

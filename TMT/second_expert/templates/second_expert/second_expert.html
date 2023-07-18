@@ -1,0 +1,63 @@
+{% extends 'core/base.html'%}
+
+{% block title %} ExpertSystem {% endblock %}
+
+{% block content %}
+<!-- expert_system.html -->
+<title>Expert System</title>
+<script src="http://cdn.tailwindcss.com"></script>
+<div class="w-1/3 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
+    <div class="flex justify-between">
+        <h1 class="text-2xl font-bold mb-4">Expert System</h1>
+        <a href="#" class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3">Skip></a>
+    </div>
+    
+
+    <form action="{% url 'second_expert' %}" method="GET" class="max-w-lg">
+        
+            <p style="margin-bottom: 24px;">
+                <label for="proficiency_level" class="block font-bold mb-2">What programmer are you?</label>
+            </p>
+            <div class="mb-4 flex justify-center bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" style="margin-bottom: 40px;">
+                <input type="radio" id="beginner" name="proficiency_level" value="beginner">
+                  <label for="beginner">Beginner</label>
+        </div> 
+
+        <div class="mb-4 flex justify-center bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" style="margin-bottom: 40px;">
+        <input type="radio" id="intermediate" name="proficiency_level" value="intermediate">
+                  <label for="intermediate">Intermediate</label>
+        </div>
+
+        <div class="mb-4 flex justify-center bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" style="margin-bottom: 40px;">
+        <input type="radio" id="advanced" name="proficiency_level" value="advanced">
+                  <label for="advanced">Advanced</label>
+        </div>
+       
+
+       
+        <div class="mb-4 flex justify-center">
+          <button  type="submit" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mx-3">Next</button>
+         
+
+    </div> 
+  </form>
+
+    <!-- Render the results -->
+    <!-- <div class="mt-8">
+        {% if introduction %}
+            <p>{{ introduction }}</p>
+        {% endif %}
+
+        {% if Recommendation %}
+            <p>{{ Recommendation}}</p>
+        {% endif %}  -->
+
+        <!-- Add other result variables here -->
+        <!-- {% if results %}
+        <p>{{ results }}</p>
+        {% endif %} -->
+    <!-- </div> -->
+</div>
+
+
+{% endblock %}
