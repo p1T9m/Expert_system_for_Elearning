@@ -3,20 +3,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegistrationForm , UserUpdateForm , ProfileUpdateForm
-from django.contrib.auth import authenticate, login
-
-def login(request):
-    if request.method == 'POST':
-        form=login(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            messages.success(request, f'login successful')
-            return redirect('second_expert')  # Redirect to the second expert page on successful login
-        else:
-            messages.error(request, "Invalid username or password.")
-
-    return render(request, 'expert_system/expert_system.html')
 
 
 def register(request):
