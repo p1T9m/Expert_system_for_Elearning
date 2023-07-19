@@ -10,3 +10,8 @@ def contact(request):
 def course(request):
     return render(request, 'core/course.html')
 
+def intro(request):
+    return render(request, 'core/c++intro.html')
+
+
+
