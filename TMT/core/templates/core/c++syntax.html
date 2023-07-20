@@ -1,5 +1,6 @@
 {% extends 'core/base.html'%}
-{% block title %} C++ Intro {% endblock %}
+
+{% block title %} C++ Syntax {% endblock %}
 
 {% block content %}
 <div class="relative h-32 w-32 ...">
@@ -166,38 +167,71 @@
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
         <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Intro</h1>
-            <h2 >What is C++?</h2>
-            <p>
-                C++ is a cross-platform language that can be used to create high-performance applications.</p>
-            </br>
-            <p class="border-b border-gray-200">
-                  C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
-            </br>
+            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Syntax</h1>
+            <div class="bg-gray-100">
+                <span class="block text-sm font-medium text-gray-900">C++ Syntax Example:</span>
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        #include &lt;iostream&gt;
+                        using namespace std;
+            
+                        <span class="text-blue-500">int</span> main() {
+                          cout &lt;&lt; "Hello World!";
+                          <span class="text-blue-500">return</span> <span class="text-red-500">0</span>;
+                        }
+                    </code>
+                </pre>
+            </div>            
+        </br>
+        <span class="block text-sm font-medium text-gray-900">Example Explained:</span>
+        <p>
+            <strong>Line 1:</strong> <code class="text-red-400 underline decoration-sky-500"> #include &lt;iostream&gt;</code>
+                is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.
+        </p>
+    </br>
+        <p>
+            <strong>Line 2:</strong> <code class="text-red-400 underline decoration-sky-500"> using namespace std;</code>
+            means that we can use names for objects and variables from the standard library.
+        </p>
+        </br>
+        <p>
+            <strong>Line 3:</strong> A blank line. C++ ignores white space. But we use it to make the code more readable.
+        </p>
+        </br>
+        <p>
+            <strong>Line 4:</strong> Another thing that always appear in a C++ program, is <code class="text-red-400 underline decoration-sky-500"> int main().</code> 
+            This is called a function. Any code inside its curly brackets
+            <code class="text-red-400 underline decoration-sky-500">{}</code> will be executed.
+            
+        </p>
+        </br>
+        <p>
+            <strong>Line 5:</strong> <code class="text-red-400 underline decoration-sky-500"> cout.</code>
+             (pronounced "see-out") is an <strong>object</strong> used together with the insertion operator
+              (<code class="text-red-400 underline decoration-sky-500"><<</code>) to output/print text. In our example it will output "Hello World!".
+        </p>
+    </br>
+    <p>
+        <strong>Note:</strong> Every C++ statement ends with a semicolon  <code class="text-red-400 underline decoration-sky-500"> ;.</code> 
+        </br>
+        <strong>Note:</strong> The body of <code class="text-red-400 underline decoration-sky-500"> int main()</code>
+        could also be wrotten as: <code class="text-red-400 underline decoration-sky-500"> int main () { cout << "Hello World"; return 0; }</code>
+        </br>
+        <strong>Remember:</strong> The compiler ignores white spaces. However, multiple lines makes the code more readable.       
+    </p>
+    </br>
+    <p>
+        <strong>Line 6:</strong>  <code class="text-red-400 underline decoration-sky-500">return 0</code> 
+        ends the main function. 
+    </p>
+    </br>
+    <p>
+        <strong>Line 7:</strong>  Do not forget to add the closing curly bracket<code class="text-red-400 underline decoration-sky-500">}</code> 
+         to acutually ends the main function. 
+    </p>
 
-            <h1>Get started with C++</h1>
-            <p>
-                You need to get  text editor installed for example:Notepad
-                to be able to write your code
-            </p>
-        </br>
-            <p>
-                You need to install an <strong>IDE</strong> (Integrated Development Environment) 
-                which is used to edit and compile the code
-            </p>
-        </br>
-            <p>
-                Here is a tutorial video that shows how to setup the dev c++ <strong>IDE</strong>
-            </p>
-        </br>
-            <div class="flex justify-between"> 
-                <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://youtu.be/5uXYIOPvTzw">
-                    Dev C++
-                </a>.
-        </div>
+
 
     </div>
-
-
-
+</div>
 {% endblock %}

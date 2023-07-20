@@ -1,5 +1,6 @@
 {% extends 'core/base.html'%}
-{% block title %} C++ Intro {% endblock %}
+
+{% block title %} C++ Varaibles {% endblock %}
 
 {% block content %}
 <div class="relative h-32 w-32 ...">
@@ -166,38 +167,53 @@
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
         <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Intro</h1>
-            <h2 >What is C++?</h2>
+            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Variables</h1>
+            <h2 class="block text-sm font-medium text-gray-900" >C++ Variables</h2>
             <p>
-                C++ is a cross-platform language that can be used to create high-performance applications.</p>
+                Variables are containers for storing data values.</p>
             </br>
-            <p class="border-b border-gray-200">
-                  C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
+            <p >
+                In C++, there are different <strong>types</strong> of variables (defined with different keywords), for example:
+            </p>
             </br>
-
-            <h1>Get started with C++</h1>
-            <p>
-                You need to get  text editor installed for example:Notepad
-                to be able to write your code
-            </p>
+            <ul class="list-disc list-inside">
+                <li><code class="text-red-400 underline decoration-sky-500">int</code>- stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                <li><code class="text-red-400 underline decoration-sky-500">float</code>- stores floating point numbers, such as 1.23 or -1.23</li>
+                <li><code class="text-red-400 underline decoration-sky-500">double</code>- stores double precision floating point numbers, such as 1.23 or -1.23</li>
+                <li><code class="text-red-400 underline decoration-sky-500">char</code>- stores single characters, such as 'a' or 'A'. char values are surrounded by single quote</li>
+                <li><code class="text-red-400 underline decoration-sky-500">string</code>- stores a sequence of characters, such as "Hello World"</li>
+                <li><code class="text-red-400 underline decoration-sky-500">bool</code>- stores true or false</li>
+              </ul>
         </br>
-            <p>
-                You need to install an <strong>IDE</strong> (Integrated Development Environment) 
-                which is used to edit and compile the code
-            </p>
-        </br>
-            <p>
-                Here is a tutorial video that shows how to setup the dev c++ <strong>IDE</strong>
-            </p>
-        </br>
-            <div class="flex justify-between"> 
-                <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://youtu.be/5uXYIOPvTzw">
-                    Dev C++
-                </a>.
+        <h2 class="block text-sm font-medium text-gray-900">Declaring (Creating) Variables</h2>
+        <p> To create a variable, specify the type and assign it a value:</p>
+        <div class="bg-gray-100">
+            <span class="block text-sm font-medium text-gray-900"> Syntax </span>
+            <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                <code>
+                    type variableName = value;
+                </code>
+            </pre>
+        </div>
+    </br>
+        <p>
+            Where type is one of C++ types (such as <code class="text-red-400 underline decoration-sky-500">int</code>), 
+            and <strong class="italic">variableName</strong> is the name of the variable (such as <strong>x</strong> or <srtong>myName</srtong>). 
+            The <strong>equal sign</strong> is used to assign values to the variable.
+            To create a variable that should store a number, look at the following example:
+        </p>
+    </br>
+        <div class="bg-gray-100">
+            <span class="block text-sm font-medium text-gray-900"> Example </span>
+            <p>Create a variable called myNum of type <code class="text-red-400 underline decoration-sky-500">int</code> and assign it the value 15:</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                <code>
+                    <span class="text-blue-500">int</span> myNum = <span class="text-red-500">15</span>;
+                    cout << myNum;
+                </code>
+            </pre>
         </div>
 
     </div>
-
-
 
 {% endblock %}

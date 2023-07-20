@@ -1,5 +1,6 @@
 {% extends 'core/base.html'%}
-{% block title %} C++ Intro {% endblock %}
+
+{% block title %} Python varariable {% endblock %}
 
 {% block content %}
 <div class="relative h-32 w-32 ...">
@@ -166,38 +167,52 @@
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
         <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Intro</h1>
-            <h2 >What is C++?</h2>
+            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Python Variable</h1>
             <p>
-                C++ is a cross-platform language that can be used to create high-performance applications.</p>
+                Variables are containers for storing data values. </p>
             </br>
-            <p class="border-b border-gray-200">
-                  C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
-            </br>
-
-            <h1>Get started with C++</h1>
+                <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Creating Variable</h1>
             <p>
-                You need to get  text editor installed for example:Notepad
-                to be able to write your code
-            </p>
+                Python has no command for declaring a variable.
+                    A variable is created the moment you first assign a value to it. </p>
+            <div class="bg-gray-100">
+                <span class="block text-sm font-medium text-gray-900"> Example:</span>
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        x = 5
+                        y = "John"
+                        print(x)
+                        print(y)
+                    </code>
+                </pre>
+            </div>            
         </br>
-            <p>
-                You need to install an <strong>IDE</strong> (Integrated Development Environment) 
-                which is used to edit and compile the code
-            </p>
+        <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+        <div class="bg-gray-100">
+            <span class="block text-sm font-medium text-gray-900"> Example:</span>
+            <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                <code>
+                    x = 4       # x is of type int
+                    x = "Sally" # x is now of type str
+                    print(x)
+                </code>
+            </pre>
+        </div> 
+    </br>
+    <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Casting</h1>
         </br>
-            <p>
-                Here is a tutorial video that shows how to setup the dev c++ <strong>IDE</strong>
-            </p>
-        </br>
-            <div class="flex justify-between"> 
-                <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://youtu.be/5uXYIOPvTzw">
-                    Dev C++
-                </a>.
-        </div>
-
+            <p>If you want to specify the data type of a variable, this can be done with casting.            </p>
+            <div class="bg-gray-100">
+                <span class="block text-sm font-medium text-gray-900"> Example:</span>
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        x = str(3)    # x will be '3'
+                        y = int(3)    # y will be 3
+                        z = float(3)  # z will be 3.0
+                    </code>
+                </pre>
+            </div>     
+        </br> 
     </div>
-
-
-
+</div>
 {% endblock %}

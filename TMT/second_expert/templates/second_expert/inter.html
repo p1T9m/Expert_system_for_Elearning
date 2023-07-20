@@ -17,13 +17,24 @@
 {% endif %}
 
 <div class="flex justify-between"> 
-    <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://www.w3schools.com/java/java_oop.asp">
-      Java OPt
-    </a>.
+        <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="{% url 'intro' %}">
+            C++ 
+        </a>
+        <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="{% url 'pintro' %}">
+            Python 
+        </a>
+      </div>  
+    </br>
+<div class="flex justify-between">
+    <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="{% url 'jintro' %}">
+      Java OPP
+    </a>
     <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/">
         Data structure and alogrithims
-    </a>.
+    </a>
+
 </div>
+
 
 
 {% endblock %}

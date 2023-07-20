@@ -1,5 +1,6 @@
 {% extends 'core/base.html'%}
-{% block title %} C++ Intro {% endblock %}
+
+{% block title %} Java OPP {% endblock %}
 
 {% block content %}
 <div class="relative h-32 w-32 ...">
@@ -166,38 +167,47 @@
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
         <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Intro</h1>
-            <h2 >What is C++?</h2>
-            <p>
-                C++ is a cross-platform language that can be used to create high-performance applications.</p>
-            </br>
-            <p class="border-b border-gray-200">
-                  C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
-            </br>
+            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Java Class Methods</h1>
+        </br>
+            <p>You learned from the Java Methods chapter that methods are declared within a class, and that they are used to perform certain actions:</p>
+            <div class="bg-gray-100">
+                <span class="block text-sm font-medium text-gray-900"> Example:</span>
+                <p>Create a method called "<code class="text-red-400 underline decoration-sky-500">myMethod()</code>in Main" 
+                with two attributes: <code class="text-red-400 underline decoration-sky-500">x</code> 
+                and<code class="text-red-400 underline decoration-sky-500">y</code>:</p>
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
+                        <code class="text-sky-500">static void</code> <code class="text-red-400 ">myMethod()</code>{
+                        <code class="text-red-500">System</code>.out.<code class="text-red-500">println</code><code class="text-green-500">("Hello world!")</code>;
+                            } 
+                          }
+                    </code>
+                </pre>
+            </div>            
+    </br>
+    <h1 class="text-2xl font-bold mb-4 border-b border-gray-200"></h1>
+        </br>
+            <p> <code class="text-red-400 underline decoration-sky-500">myMethod()</code>prints a text (the action), when it is <strong>called</strong>. To call a method, write the method's name followed by two parentheses () and a semicolon;:</p>
+            <div class="bg-gray-100">
+                <span class="block text-sm font-medium text-gray-900"> Example:</span>
+                <p>Inside <code class="text-red-400 underline decoration-sky-500">main</code>"
+                   call,<code class="text-red-400 underline decoration-sky-500">myObj</code>:</p>
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
+                            <code class="text-sky-500">static void</code> <code class="text-red-400 ">myMethod()</code>{
+                            <code class="text-red-500">System</code>.out.<code class="text-red-500">println</code><code class="text-green-500">("Hello world!")</code>;
+                            }
+                            <code class="text-sky-500">public static class</code> <code class="text-red-500">main</code>(<code class="text-red-500">String</code>[] args) {
+                                <code class="text-red-400 ">myMethod()</code>;
+                            }
+                          }
 
-            <h1>Get started with C++</h1>
-            <p>
-                You need to get  text editor installed for example:Notepad
-                to be able to write your code
-            </p>
-        </br>
-            <p>
-                You need to install an <strong>IDE</strong> (Integrated Development Environment) 
-                which is used to edit and compile the code
-            </p>
-        </br>
-            <p>
-                Here is a tutorial video that shows how to setup the dev c++ <strong>IDE</strong>
-            </p>
-        </br>
-            <div class="flex justify-between"> 
-                <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://youtu.be/5uXYIOPvTzw">
-                    Dev C++
-                </a>.
-        </div>
-
+                          // Outputs "Hello World!"
+                    </code>
+                </pre>
+            </div>       
     </div>
-
-
-
+</div>
 {% endblock %}

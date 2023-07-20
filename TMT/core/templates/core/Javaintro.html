@@ -1,5 +1,5 @@
 {% extends 'core/base.html'%}
-{% block title %} C++ Intro {% endblock %}
+{% block title %} Python Intro {% endblock %}
 
 {% block content %}
 <div class="relative h-32 w-32 ...">
@@ -166,38 +166,61 @@
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
         <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Intro</h1>
-            <h2 >What is C++?</h2>
+            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Java OOP</h1>
+            <h2 >Java - What is OOP?</h2>
             <p>
-                C++ is a cross-platform language that can be used to create high-performance applications.</p>
+                OOP stands for <strong>Object-Oriented Programming.</strong></p>
             </br>
-            <p class="border-b border-gray-200">
-                  C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
-            </br>
+            <p>
+                Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
+            </p>
+        </br>
+        <p>
+            Object-oriented programming has several advantages over procedural programming:
+        </p>
+            <ul class="list-disc list-inside">
+                <li>OOP is faster and easier to execute
+                </li>
+                <li>OOP provides a clear structure for the programs
+                </li>
+                <li>OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+                </li>
+                <li> OOP makes it possible to create full reusable applications with less code and shorter development time
+                </li>
+              </ul>
+        </br>
+        <p>
+            Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it. </p>
+        </br>
+            <h1>Java - What are Classes and Objects? </h1>
+            <p>
+                Classes and objects are the two main aspects of object-oriented programming.
+                Look at the following illustration to see the difference between class and objects:
+            </p>
+            <div class="flex">
+                <div class="bg-gray-100  ">
+                    <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2 items-center justify-center">
+                        <code>
+                            class
 
-            <h1>Get started with C++</h1>
-            <p>
-                You need to get  text editor installed for example:Notepad
-                to be able to write your code
-            </p>
-        </br>
-            <p>
-                You need to install an <strong>IDE</strong> (Integrated Development Environment) 
-                which is used to edit and compile the code
-            </p>
-        </br>
-            <p>
-                Here is a tutorial video that shows how to setup the dev c++ <strong>IDE</strong>
-            </p>
-        </br>
-            <div class="flex justify-between"> 
-                <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://youtu.be/5uXYIOPvTzw">
-                    Dev C++
-                </a>.
-        </div>
+                            Fruit
+                        </code>
+                    </pre>
+                </div>   
+                <div class="bg-gray-100 ">
+                    <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2 items-center justify-center">
+                        <code>
+                            objects
 
+                            Apple
+
+                            Banana
+
+                            Mango
+                        </code>
+                    </pre>
+                </div>       
+            </div>
+            
     </div>
-
-
-
 {% endblock %}

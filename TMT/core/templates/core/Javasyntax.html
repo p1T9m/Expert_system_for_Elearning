@@ -1,5 +1,6 @@
 {% extends 'core/base.html'%}
-{% block title %} C++ Intro {% endblock %}
+
+{% block title %} Python Syntax {% endblock %}
 
 {% block content %}
 <div class="relative h-32 w-32 ...">
@@ -166,38 +167,50 @@
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
         <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">C++ Intro</h1>
-            <h2 >What is C++?</h2>
-            <p>
-                C++ is a cross-platform language that can be used to create high-performance applications.</p>
-            </br>
-            <p class="border-b border-gray-200">
-                  C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
-            </br>
-
-            <h1>Get started with C++</h1>
-            <p>
-                You need to get  text editor installed for example:Notepad
-                to be able to write your code
-            </p>
+            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Java Class Attributes</h1>
         </br>
-            <p>
-                You need to install an <strong>IDE</strong> (Integrated Development Environment) 
-                which is used to edit and compile the code
-            </p>
+            <p>In the previous chapter, we used the term "variable" for <code class="text-red-400 underline decoration-sky-500">x</code>
+                 in the example (as shown below). It is actually an attribute of the class. 
+                Or you could say that class <strong>attributes</strong> are variables within a class:</p>
+            <div class="bg-gray-100">
+                <span class="block text-sm font-medium text-gray-900"> Example:</span>
+                <p>Create a class called "<code class="text-red-400 underline decoration-sky-500">Main</code>" 
+                with two attributes: <code class="text-red-400 underline decoration-sky-500">x</code> 
+                and<code class="text-red-400 underline decoration-sky-500">y</code>:</p>
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
+                            <code class="text-sky-500">int</code> x = <code class="text-red-500">5</code>;
+                            <code class="text-sky-500">int</code> y = <code class="text-red-500">3</code>;
+                          }
+                    </code>
+                </pre>
+            </div>            
+    </br>
+    <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Accessing Attributes</h1>
         </br>
-            <p>
-                Here is a tutorial video that shows how to setup the dev c++ <strong>IDE</strong>
-            </p>
-        </br>
-            <div class="flex justify-between"> 
-                <a class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" href="https://youtu.be/5uXYIOPvTzw">
-                    Dev C++
-                </a>.
-        </div>
-
+            <p>You can access attributes by creating an object of the class, and by using the dot syntax (<code class="text-red-400 underline decoration-sky-500">.</code>):</p>
+    </br>
+            <p>The following example will create an object of the <code class="text-red-400 underline decoration-sky-500">Main</code> class, 
+                with the name <code class="text-red-400 underline decoration-sky-500">myObj</code>.
+                 We use the <code class="text-red-400 underline decoration-sky-500">x</code> attribute on the object to print its value:</p>
+            <div class="bg-gray-100">
+                <span class="block text-sm font-medium text-gray-900"> Example:</span>
+                <p>Create an object called"<code class="text-red-400 underline decoration-sky-500">myObj</code>"
+                    and print the value of<code class="text-red-400 underline decoration-sky-500">x</code>:</p>
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
+                            <code class="text-sky-500">int</code> x = <code class="text-red-500">5</code>;
+                          
+                            <code class="text-sky-500">public static class</code> <code class="text-red-500">main</code>(<code class="text-red-500">String</code>[] args) {
+                                <code class="text-red-500">Main</code> myObj = <code class="text-sky-500">Main</code> <code class="text-red-500">Main</code>();
+                                <code class="text-red-500">System</code>.out.<code class="text-red-500">println</code>(myObj.x);
+                            }
+                          }
+                    </code>
+                </pre>
+            </div>       
     </div>
-
-
-
+</div>
 {% endblock %}
