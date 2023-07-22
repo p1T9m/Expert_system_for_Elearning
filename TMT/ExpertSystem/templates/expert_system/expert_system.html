@@ -8,7 +8,7 @@
 <script src="http://cdn.tailwindcss.com"></script>
 <div class="w-1/3 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
     <div class="flex justify-between">
-        <h1 class="text-2xl font-bold mb-4">Expert System</h1>
+        <h1 class="text-2xl font-bold mb-4">Language Recommendation</h1>
         <a href="{% url 'index' %}" class="bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3">Skip></a>
     </div>
     
@@ -16,7 +16,7 @@
     <form action="{% url 'expert_system' %}" method="GET" class="max-w-lg">
         
             <p style="margin-bottom: 24px;">
-                <label for="proficiency_level" class="block font-bold mb-2">What programmer are you?</label>
+                <label for="proficiency_level" class="block font-bold mb-2">Programming skill you would like to explore:</label>
             </p>
             <div class="mb-4 flex justify-center bg-transparent hover:bg-teal-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mx-3" style="margin-bottom: 40px;">
                 <input type="radio" id="beginner" name="proficiency_level" value="beginner">
