@@ -37,5 +37,44 @@ def jsyntax(request):
 def jvariables(request):
     return render(request, 'core/Javavar.html')
 
+def Dstack(request):
+    return render(request, 'core/dstack.html')
+
+def Dqueue(request):
+    return render(request, 'core/dqueue.html')
+
+def Deque(request):
+    return render(request, 'core/deque.html')
+
+def http(request):
+    return render(request, 'core/http.html')
+
+def html(request):
+    return render(request, 'core/html.html')
+
+def css(request):
+    return render(request, 'core/css.html')
+
+def Djintro(request):
+    return render(request, 'core/djintro.html')
+
+def venv(request):
+    return render(request, 'core/venv.html')
+
+def project(request):
+    return render(request, 'core/project.html')
+
+def circ(request):
+    return render(request, 'core/circular.html')
+
+def output(request):
+    return render(request, 'core/c++output.html')
+
+def comment(request):
+    return render(request, 'core/pcomments.html')
+
+def method(request):
+    return render(request, 'core/methods.html')
+
 
 

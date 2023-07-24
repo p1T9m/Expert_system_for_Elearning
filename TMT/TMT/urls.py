@@ -7,7 +7,6 @@ from users import views as user_view
 from ExpertSystem import views 
 from second_expert import views as second
 
-
 urlpatterns = [
     path('',include('core.urls')),
     path('register/',user_view.register, name='register'),

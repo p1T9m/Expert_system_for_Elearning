@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-
 def expert_system(request):
     if request.method == 'GET':
         proficiency_level = request.GET.get('proficiency_level')
@@ -23,16 +22,14 @@ def intermediate_page(request):
     # Perform logic specific to the intermediate page
     introduction = "tudy object oriented programming concepts and Data structures and algorithms. This will help your skills become more advanced."
     context = {
-        'introduction': introduction,
-    }
+        'introduction': introduction,}
     return render(request, 'expert_system/intermediate_page.html', context)
 
 def advanced_page(request):
     # Perform logic specific to the advanced page
     introduction = "i will provide you with two frameworks. if your more into backend go with django. If you prefer frontend go with web development"
     context = {
-        'introduction': introduction,
-    }
+        'introduction': introduction,}
     return render(request, 'expert_system/advanced_page.html', context)
 
 

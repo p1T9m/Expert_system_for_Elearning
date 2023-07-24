@@ -1,6 +1,5 @@
 {% extends 'core/base.html'%}
-
-{% block title %} Java OPP {% endblock %}
+{% block title %} Python Intro {% endblock %}
 
 {% block content %}
 <div class="relative h-32 w-32 ...">
@@ -44,11 +43,7 @@
                                 </li>
                                 <li>
                                     <a href="{% url 'out' %}"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">C++ Varaiable</a>
-                                </li>
-                                <li>
-                                    <a href="{% url 'comm' %}"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">C++ output</a>
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">C++ Output</a>
                                 </li>
                             </ul>
                         </li>
@@ -75,7 +70,7 @@
                                 </li>
                                 <li>
                                     <a href="{% url 'comm' %}"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Python Comment</a>
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Pyhton Comment</a>
                                 </li>
                             </ul>
                         </li>
@@ -84,13 +79,13 @@
                           <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" 
                           viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
-                          <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Java OOP</span>
+                          <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Java OPP</span>
                           <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
                             <ul id="dropdown-example-3" class="hidden py-2 space-y-2">
                                 <li>
                                     <a href="{% url 'jintro' %}"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java OOP</a>
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java OPP</a>
                                 </li>
                                 <li>
                                     <a href="{% url 'jsyntax' %}"
@@ -99,6 +94,10 @@
                                 <li>
                                     <a href="{% url 'jvar' %}"
                                         class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java class Methods</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'meth' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Methods</a>
                                 </li>
                             </ul>
                         </li>
@@ -112,16 +111,20 @@
                     </button>
                             <ul id="dropdown-example-4" class="hidden py-2 space-y-2">
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java OPP</a>
+                                    <a href="{% url 'dstack' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Stack</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java  class Attributes</a>
+                                    <a href="{% url 'dqueue' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Queue</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java class Methods</a>
+                                    <a href="{% url 'deque' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Deque</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'circ' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Circular Queue</a>
                                 </li>
                             </ul>
                         </li>
@@ -135,16 +138,16 @@
                     </button>
                             <ul id="dropdown-example-5" class="hidden py-2 space-y-2">
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java OPP</a>
+                                    <a href="{% url 'http' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Http</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java  class Attributes</a>
+                                    <a href="{% url 'html' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Html</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java class Methods</a>
+                                    <a href="{% url 'css' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Css</a>
                                 </li>
                             </ul>
                         </li>
@@ -158,16 +161,16 @@
                     </button>
                             <ul id="dropdown-example-6" class="hidden py-2 space-y-2">
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java OPP</a>
+                                    <a href="{% url 'djintro' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Django intro</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java  class Attributes</a>
+                                    <a href="{% url 'venv' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Django virtual environment</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Java class Methods</a>
+                                    <a href="{% url 'project' %}"
+                                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Create a project</a>
                                 </li>
                             </ul>
                         </li>				
@@ -178,48 +181,49 @@
 </div>
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
-        <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Java Class Methods</h1>
-        </br>
-            <p>You learned from the Java Methods chapter that methods are declared within a class, and that they are used to perform certain actions:</p>
-            <div class="bg-gray-100">
-                <span class="block text-sm font-medium text-gray-900"> Example:</span>
-                <p>Create a method called "<code class="text-red-400 underline decoration-sky-500">myMethod()</code>in Main" 
-                with two attributes: <code class="text-red-400 underline decoration-sky-500">x</code> 
-                and<code class="text-red-400 underline decoration-sky-500">y</code>:</p>
-                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
-                    <code>
-                        <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
-                        <code class="text-sky-500">static void</code> <code class="text-red-400 ">myMethod()</code>{
-                        <code class="text-red-500">System</code>.out.<code class="text-red-500">println</code><code class="text-green-500">("Hello world!")</code>;
-                            } 
-                          }
-                    </code>
-                </pre>
-            </div>            
+    <div>
+        <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">My First Project        </h1>
+        <p>Once you have come up with a suitable name for your Django project, like mine: my_tennis_club, navigate to where in the file system you want to store the code 
+            (in the virtual environment), I will navigate to the myworld folder, and run this command in the command prompt:
+        </p>
     </br>
-    <h1 class="text-2xl font-bold mb-4 border-b border-gray-200"></h1>
-        </br>
-            <p> <code class="text-red-400 underline decoration-sky-500">myMethod()</code>prints a text (the action), when it is <strong>called</strong>. To call a method, write the method's name followed by two parentheses () and a semicolon;:</p>
-            <div class="bg-gray-100">
-                <span class="block text-sm font-medium text-gray-900"> Example:</span>
-                <p>Inside <code class="text-red-400 underline decoration-sky-500">main</code>"
-                   call,<code class="text-red-400 underline decoration-sky-500">myObj</code>:</p>
+
+    <div class="bg-gray-100 w-3/4 mx-auto"> <!-- Adjust the width as per your preference, w-3/4 makes it 75% wide -->
+        <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+            <code>
+                django-admin startproject my_tennis_club
+            </code>
+        </pre>
+    </div>
+    </br>
+            <p>Django creates a my_tennis_club folder on my computer, with this content:</p>
+            <div class="bg-gray-100 w-3/4 mx-auto"> <!-- Adjust the width as per your preference, w-3/4 makes it 75% wide -->     
                 <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
                     <code>
-                        <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
-                            <code class="text-sky-500">static void</code> <code class="text-red-400 ">myMethod()</code>{
-                            <code class="text-red-500">System</code>.out.<code class="text-red-500">println</code><code class="text-green-500">("Hello world!")</code>;
-                            }
-                            <code class="text-sky-500">public static class</code> <code class="text-red-500">main</code>(<code class="text-red-500">String</code>[] args) {
-                                <code class="text-red-400 ">myMethod()</code>;
-                            }
-                          }
-
-                          // Outputs "Hello World!"
+                        my_tennis_club
+                        manage.py
+                        my_tennis_club/
+                            __init__.py
+                            asgi.py
+                            settings.py
+                            urls.py
+                            wsgi.py
                     </code>
-                </pre>
-            </div>       
-    </div>
+            </div>
+            <p>These are all files and folders with a specific meaning, you will learn about some of them later in this tutorial, but for now, it is more important to know that this is the location of your project, and that you can start building applications in it.            </p>
+ </br>
+            <h1>Run the Django Project</h1>
+       
+        <p>Now that you have a Django project, you can run it, and see what it looks like in a browser.
+
+            Navigate to the /my_tennis_club folder and execute this command in the command prompt:</p>
+            <div class="bg-gray-100 w-3/4 mx-auto"> <!-- Adjust the width as per your preference, w-3/4 makes it 75% wide -->     
+                <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
+                    <code>
+                        py manage.py runserver
+                    </code>
+            </div>
 </div>
+
+
 {% endblock %}
