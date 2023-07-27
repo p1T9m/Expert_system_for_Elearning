@@ -120,45 +120,36 @@
 
 <div class="w-1/2 my-6 mx-auto p-6 bg-gray-100 rounded-xl">
         <div>
-            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Java Class Methods
+            <h1 class="text-2xl font-bold mb-4 border-b border-gray-200">Java Constructors
             </h1>
             <p>
-                You learned from the Java Methods chapter that methods are declared within a class, and that they are used to perform certain actions:  </p>
+                A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes:</p>
             </br>
             <div class="bg-gray-100">
-                <span class="block text-sm font-medium text-gray-900"> Example </span>>
-                <p>You learned from the Java Methods chapter that methods are declared within a class, and that they are used to perform certain actions:                </p>
+                <span class="block text-sm font-medium text-gray-900"> Example:</span>
                 <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
                     <code >
-                        public class Main {
-                            static void myMethod() {
-                              System.out.println("Hello World!");
+                        //create a Main class
+                        <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
+                            <code class="text-sky-500">x</code>=5; //create class attribute <br>
+                            //create class constructor
+                            <code class="text-sky-500">public class</code> <code class="text-red-500">Main</code> {
+                            <code class="text-sky-500">static void
+                                x=5;
+                            }
+                            <code class="text-sky-500">public static class</code> <code class="text-red-500">main</code>(<code class="text-red-500">String</code>[] args) {
+                                <code class="text-red-500">Mian</code> myObj = <code class="text-Sky-500">new</code><code class="text-red-400 ">Main()</code>;
+                            <code class="text-red-500">System</code>.out.<code class="text-red-500">println</code><code class="text-green-500">("myobj.x")</code>;
+
                             }
                           }
+
+                          // Outputs 5
                     </code>
                 </pre>
             </div>
         </br>
-        <div class="bg-gray-100">
-            <span class="block text-sm font-medium text-gray-900"> Example </span>>
-            <p>Inside main, call myMethod():</p>
-            <pre class="bg-gray-800 text-white p-4 rounded-lg mt-2">
-                <code >
-                    public class Main {
-                        static void myMethod() {
-                          System.out.println("Hello World!");
-                        }
-                      
-                        public static void main(String[] args) {
-                          myMethod();
-                        }
-                      }
-                      
-                      // Outputs "Hello World!"
-                </code>
-            </pre>
-        </div>
-
+        <p>Note: You can inclde as many parameters as you want.</p>
             
     </div>
 {% endblock %}
